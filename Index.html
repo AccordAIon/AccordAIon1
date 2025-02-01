@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrof Music Store Portal</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            border-bottom: 5px solid #fff;
+        }
+        .container {
+            text-align: center;
+            margin: 50px;
+        }
+        .link-button {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 25px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .link-button:hover {
+            background-color: #ff1493;
+            transform: scale(1.1);
+        }
+        /* Accordion styles */
+        .accordion {
+            background-color: #ffcc00;
+            color: #333;
+            cursor: pointer;
+            padding: 20px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            font-size: 1.5em;
+            outline: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        .accordion:hover {
+            background-color: #ff4500;
+        }
+        .active, .accordion:focus {
+            background-color: #ff4500;
+            color: white;
+        }
+        .panel {
+            padding: 15px;
+            display: none;
+            background-color: #ffffe0;
+            color: #333;
+            font-size: 1.2em;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to Petrof Music
+        <p>Petrof Music Store is launching its utility meme coin - AccordAIon.</p>
+        <p><strong>You can find us here:</strong></p>
+    </header>
+
+    <div class="container">
+        <a href="https://reverb.com/shop/petrof-music-store" class="link-button" target="_blank">Reverb - Petrof Music Store</a>
+        <a href="https://www.etsy.com/shop/TheMusicstorePetrof" class="link-button" target="_blank">Etsy - The Music Store Petrof</a>
+        <a href="https://www.ebay.com/usr/petrofmusicstore" class="link-button" target="_blank">eBay - Petrof Music Store (US)</a>
+        <a href="https://www.ebay.co.uk/usr/themusicstorepetrof?_tab=feedback" class="link-button" target="_blank">eBay - The Music Store Petrof (UK)</a>
+
+        <button class="accordion">Learn More About AccordAIon</button>
+        <div class="panel">
+            <p>AccordAIon is a utility meme coin designed for the Petrof Music Store ecosystem. It's a fun way to get involved in the world of crypto while supporting a brand that loves music.</p>
+        </div>
+
+        <button class="accordion">How to Buy AccordAIon</button>
+        <div class="panel">
+            <p>1. Visit our official crypto exchange partner.<br>2. Create an account and verify your identity.<br>3. Search for AccordAIon and purchase using your preferred currency.<br>4. Store your tokens securely in a compatible wallet.</p>
+        </div>
+
+        <button class="accordion">Frequently Asked Questions</button>
+        <div class="panel">
+            <p><strong>What is AccordAIon?</strong><br>A fun and useful crypto token for Petrof Music Store customers.</p>
+            <p><strong>How can I use it?</strong><br>Use it for discounts, special promotions, and future integrations.</p>
+            <p><strong>Where can I store AccordAIon?</strong><br>In any compatible crypto wallet supporting the token standard.</p>
+        </div>
+
+        <button class="accordion">News & Updates</button>
+        <div class="panel">
+            <p>Stay tuned for upcoming promotions, partnerships, and new ways to use AccordAIon in Petrof Music Store!</p>
+        </div>
+    </div>
+
+    <script>
+        // Accordion functionality
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
